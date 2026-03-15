@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nabila Laundry – Cuci & Setrika Premium Quality</title>
+  <!-- Open Graph Meta Tags (Preview WhatsApp / Facebook / Telegram) -->
+  <meta property="og:title" content="Nabila Laundry – Cuci & Setrika Premium Quality">
+  <meta property="og:description" content="Laundry premium dengan layanan cuci, setrika, dry clean, dan express 4–6 jam. Bersih, wangi, dan terpercaya.">
+  <meta property="og:image" content="https://DOMAINANDA.com/img/banner_laundry.jpeg">
+  <meta property="og:url" content="https://DOMAINANDA.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Twitter Card (dipakai juga oleh beberapa platform preview) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nabila Laundry – Cuci & Setrika Premium Quality">
+  <meta name="twitter:description" content="Laundry premium dengan layanan express 4–6 jam. Bersih, wangi, dan terpercaya.">
+  <meta name="twitter:image" content="https://DOMAINANDA.com/img/banner_laundry.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --pink:       #e91e8c;
+      --pink-light: #f472b6;
+      --pink-pale:  #fce7f3;
+      --pink-deep:  #be185d;
+      --white:      #ffffff;
+      --gray:       #6b7280;
+      --text:       #1f1f2e;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(233,30,140,0.12);
+      padding: 0 5vw;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem; font-weight: 700;
+      color: var(--pink);
+      letter-spacing: -.5px;
+    }
+    .nav-logo span { color: var(--text); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul a {
+      text-decoration: none; font-size: .88rem; font-weight: 500;
+      color: var(--text); transition: color .2s;
+    }
+    nav ul a:hover { color: var(--pink); }
+    .nav-cta {
+      background: var(--pink); color: var(--white) !important;
+      padding: .45rem 1.2rem; border-radius: 50px;
+      font-weight: 600 !important; transition: background .2s !important;
+    }
+    .nav-cta:hover { background: var(--pink-deep) !important; color: var(--white) !important; }
+
+    /* ─── HERO / BANNER ─── */
+    .hero {
+      width: 100%;
+      background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 60%, #fbcfe8 100%);
+      padding: 3rem 5vw 4rem;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .hero-banner {
+      width: 100%; max-width: 900px;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(233,30,140,0.2);
+      overflow: hidden;
+      animation: fadeUp .8s ease both;
+    }
+    .hero-banner img { width: 100%; display: block; }
+
+    .hero-badges {
+      display: flex; gap: 1rem; margin-top: 2.2rem;
+      flex-wrap: wrap; justify-content: center;
+      animation: fadeUp .8s ease .15s both;
+    }
+    .badge {
+      background: var(--white);
+      border: 1.5px solid var(--pink-light);
+      border-radius: 50px;
+      padding: .55rem 1.3rem;
+      font-size: .82rem; font-weight: 600;
+      color: var(--pink-deep);
+      display: flex; align-items: center; gap: .5rem;
+      box-shadow: 0 4px 15px rgba(233,30,140,0.1);
+    }
+    .badge-icon { font-size: 1rem; }
+
+    /* ─── SECTION TITLE ─── */
+    .section-title {
+      text-align: center; margin-bottom: 2.5rem;
+    }
+    .section-title h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .section-title h2 em {
+      font-style: italic; color: var(--pink);
+    }
+    .section-title p {
+      margin-top: .6rem; color: var(--gray);
+      font-size: .92rem; font-weight: 300;
+    }
+    .divider {
+      width: 60px; height: 4px;
+      background: linear-gradient(90deg, var(--pink), var(--pink-light));
+      border-radius: 2px; margin: .8rem auto 0;
+    }
+
+    /* ─── LAYANAN ─── */
+    #layanan {
+      padding: 5rem 5vw;
+      background: var(--white);
+    }
+    .layanan-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem; max-width: 1000px; margin: 0 auto;
+    }
+    .layanan-card {
+      background: linear-gradient(135deg, #fff0f8, #fce7f3);
+      border: 1.5px solid rgba(233,30,140,0.12);
+      border-radius: 18px; padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .layanan-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(233,30,140,0.15);
+    }
+    .layanan-icon {
+      font-size: 2.4rem; margin-bottom: .8rem;
+    }
+    .layanan-card h3 {
+      font-weight: 700; font-size: 1rem;
+      color: var(--pink-deep); margin-bottom: .4rem;
+    }
+    .layanan-card p {
+      font-size: .82rem; color: var(--gray); line-height: 1.55;
+    }
+
+    /* ─── HARGA ─── */
+    #harga {
+      padding: 5rem 5vw;
+      background: linear-gradient(180deg, #fdf2f8, #fce7f3);
+    }
+
+    /* Kiloan */
+    .price-section-label {
+      display: flex; align-items: center; gap: 1rem;
+      margin: 2rem 0 1.2rem;
+    }
+    .price-section-label span {
+      background: var(--pink); color: var(--white);
+      font-size: .75rem; font-weight: 700;
+      padding: .3rem 1rem; border-radius: 50px;
+      letter-spacing: .5px; text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .price-section-label hr {
+      flex: 1; border: none; border-top: 1.5px dashed rgba(233,30,140,0.25);
+    }
+
+    .kiloan-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem; max-width: 900px; margin: 0 auto;
+    }
+    .kiloan-card {
+      background: var(--white);
+      border-radius: 16px; padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(233,30,140,0.08);
+      border-top: 4px solid var(--pink);
+      transition: transform .2s;
+    }
+    .kiloan-card:hover { transform: translateY(-4px); }
+    .kiloan-card h4 {
+      font-weight: 700; font-size: .95rem; color: var(--text);
+      margin-bottom: .25rem;
+    }
+    .kiloan-card .sub {
+      font-size: .74rem; color: var(--gray); margin-bottom: .8rem;
+      line-height: 1.4;
+    }
+    .kiloan-card .min-label {
+      font-size: .73rem; color: var(--pink); font-weight: 600;
+      margin-bottom: .6rem;
+    }
+    .price-row { display: flex; flex-direction: column; gap: .35rem; }
+    .price-item {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .price-item .type {
+      font-size: .75rem; color: var(--gray);
+    }
+    .price-item .amount {
+      font-weight: 700; font-size: .88rem; color: var(--pink-deep);
+    }
+    .price-item.express .amount {
+      color: var(--pink);
+    }
+    .express-badge {
+      font-size: .65rem; background: #fce7f3;
+      color: var(--pink); padding: .15rem .5rem;
+      border-radius: 50px; font-weight: 700; margin-left: .3rem;
+    }
+
+    /* Satuan table */
+    .satuan-wrapper {
+      max-width: 700px; margin: 0 auto;
+      background: var(--white); border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(233,30,140,0.1);
+    }
+    .satuan-table { width: 100%; border-collapse: collapse; }
+    .satuan-table thead tr {
+      background: var(--pink); color: var(--white);
+    }
+    .satuan-table thead th {
+      padding: .75rem 1.2rem; font-size: .82rem;
+      font-weight: 600; text-align: left;
+    }
+    .satuan-table thead th:last-child { text-align: right; }
+    .satuan-table tbody tr { border-bottom: 1px solid #fce7f3; }
+    .satuan-table tbody tr:last-child { border-bottom: none; }
+    .satuan-table tbody tr:hover { background: #fff0f8; }
+    .satuan-table td {
+      padding: .65rem 1.2rem; font-size: .85rem;
+    }
+    .satuan-table td:last-child { text-align: right; font-weight: 600; color: var(--pink-deep); }
+
+    .express-note {
+      max-width: 700px; margin: 1.2rem auto 0;
+      background: var(--white); border-left: 4px solid var(--pink);
+      border-radius: 0 12px 12px 0;
+      padding: .9rem 1.2rem;
+      font-size: .8rem; color: var(--gray); line-height: 1.6;
+    }
+    .express-note strong { color: var(--pink-deep); }
+
+    /* ─── WHY US ─── */
+    #keunggulan {
+      padding: 5rem 5vw;
+      background: var(--white);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem; max-width: 900px; margin: 0 auto;
+    }
+    .why-item { text-align: center; }
+    .why-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem; font-weight: 700;
+      color: var(--pink-light); line-height: 1;
+      margin-bottom: .4rem;
+    }
+    .why-item h4 { font-size: .95rem; font-weight: 700; color: var(--text); }
+    .why-item p  { font-size: .8rem; color: var(--gray); margin-top: .3rem; }
+
+    /* ─── CTA ─── */
+    #kontak {
+      padding: 5rem 5vw;
+      background: linear-gradient(135deg, var(--pink), var(--pink-deep));
+      text-align: center; color: var(--white);
+    }
+    #kontak h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: .8rem;
+    }
+    #kontak p { font-size: .95rem; opacity: .85; margin-bottom: 2rem; }
+    .wa-btn {
+      display: inline-flex; align-items: center; gap: .8rem;
+      background: #25d366; color: var(--white);
+      font-weight: 700; font-size: 1rem;
+      padding: .9rem 2.2rem; border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .wa-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.3); }
+    .wa-icon { font-size: 1.3rem; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--text); color: #aaa;
+      text-align: center; font-size: .8rem;
+      padding: 1.6rem 1rem;
+    }
+    footer span { color: var(--pink-light); }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 640px) {
+      nav ul { display: none; }
+      .kiloan-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 420px) {
+      .kiloan-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Nabila<span> Laundry</span></div>
+  <ul>
+    <li><a href="#layanan">Layanan</a></li>
+    <li><a href="#harga">Harga</a></li>
+    <li><a href="#keunggulan">Keunggulan</a></li>
+    <li><a href="#kontak" class="nav-cta">Hubungi Kami</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-banner">
+    <img src="/img/banner_laundry.jpeg" alt="Nabila Laundry – Cuci & Setrika Premium Quality" />
+  </div>
+  <div class="hero-badges">
+    <div class="badge"><span class="badge-icon">✨</span> Premium Quality</div>
+    <div class="badge"><span class="badge-icon">⚡</span> Express 4–6 Jam</div>
+    <div class="badge"><span class="badge-icon">🌸</span> Wangi & Bersih</div>
+    <div class="badge"><span class="badge-icon">📦</span> Min. 3 Kg</div>
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan">
+  <div class="section-title reveal">
+    <h2>Layanan <em>Kami</em></h2>
+    <div class="divider"></div>
+    <p>Pilihan lengkap untuk semua kebutuhan cucian Anda</p>
+  </div>
+  <div class="layanan-grid">
+    <div class="layanan-card reveal">
+      <div class="layanan-icon">👕</div>
+      <h3>Cuci Kering Saja</h3>
+      <p>Dicuci & dikeringkan. Tanpa dilipat & tanpa parfum.</p>
+    </div>
+    <div class="layanan-card reveal">
+      <div class="layanan-icon">👔</div>
+      <h3>Cuci Lipat</h3>
+      <p>Dicuci, dikeringkan, dilipat + parfum wangi.</p>
+    </div>
+    <div class="layanan-card reveal">
+      <div class="layanan-icon">✨</div>
+      <h3>Cuci Komplit</h3>
+      <p>Dicuci, dikeringkan, disetrika, dilipat + parfum.</p>
+    </div>
+    <div class="layanan-card reveal">
+      <div class="layanan-icon">♨️</div>
+      <h3>Setrika Saja</h3>
+      <p>Disetrika rapi & dilipat dengan wangi parfum.</p>
+    </div>
+    <div class="layanan-card reveal">
+      <div class="layanan-icon">🧴</div>
+      <h3>Dry Clean</h3>
+      <p>Untuk pakaian dinas, jas, almamater, dan pakaian khusus.</p>
+    </div>
+    <div class="layanan-card reveal">
+      <div class="layanan-icon">🛏️</div>
+      <h3>Cuci Satuan</h3>
+      <p>Selimut, bedcover, seprei, sajadah, mukena, boneka & lainnya.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HARGA -->
+<section id="harga">
+  <div class="section-title reveal">
+    <h2>Daftar <em>Harga</em></h2>
+    <div class="divider"></div>
+    <p>Harga transparan, kualitas terjamin</p>
+  </div>
+
+  <!-- Kiloan -->
+  <div style="max-width:900px; margin:0 auto;">
+    <div class="price-section-label reveal">
+      <span>Laundry Kiloan</span><hr/>
+    </div>
+    <div class="kiloan-grid">
+
+      <div class="kiloan-card reveal">
+        <h4>Cuci Kering Saja</h4>
+        <p class="sub">Dicuci & dikeringkan. Tanpa dilipat & tanpa parfum.</p>
+        <p class="min-label">Minimal 3 Kg</p>
+        <div class="price-row">
+          <div class="price-item">
+            <span class="type">Reguler (1 hari)</span>
+            <span class="amount">Rp 4.000/kg</span>
+          </div>
+          <div class="price-item express">
+            <span class="type">Express (4 jam) <span class="express-badge">FAST</span></span>
+            <span class="amount">Rp 8.000/kg</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kiloan-card reveal">
+        <h4>Cuci Lipat</h4>
+        <p class="sub">Dicuci, dikeringkan, dilipat + parfum.</p>
+        <p class="min-label">Minimal 3 Kg</p>
+        <div class="price-row">
+          <div class="price-item">
+            <span class="type">Reguler (1 hari)</span>
+            <span class="amount">Rp 5.000/kg</span>
+          </div>
+          <div class="price-item express">
+            <span class="type">Express (6 jam) <span class="express-badge">FAST</span></span>
+            <span class="amount">Rp 10.000/kg</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kiloan-card reveal">
+        <h4>Cuci Komplit</h4>
+        <p class="sub">Dicuci, dikeringkan, disetrika, dilipat + parfum.</p>
+        <p class="min-label">Minimal 3 Kg</p>
+        <div class="price-row">
+          <div class="price-item">
+            <span class="type">Reguler (1 hari)</span>
+            <span class="amount">Rp 7.000/kg</span>
+          </div>
+          <div class="price-item express">
+            <span class="type">Express (4 jam) <span class="express-badge">FAST</span></span>
+            <span class="amount">Rp 12.000/kg</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kiloan-card reveal">
+        <h4>Setrika Saja</h4>
+        <p class="sub">Disetrika, dilipat + parfum.</p>
+        <p class="min-label">Minimal 3 Kg</p>
+        <div class="price-row">
+          <div class="price-item">
+            <span class="type">Reguler (1 hari)</span>
+            <span class="amount">Rp 4.000/kg</span>
+          </div>
+          <div class="price-item express">
+            <span class="type">Express (4 jam) <span class="express-badge">FAST</span></span>
+            <span class="amount">Rp 6.000/kg</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Satuan -->
+  <div style="max-width:700px; margin:0 auto;">
+    <div class="price-section-label reveal">
+      <span>Dry Clean & Cuci Satuan</span><hr/>
+    </div>
+    <div class="satuan-wrapper reveal">
+      <table class="satuan-table">
+        <thead>
+          <tr><th>Item</th><th>Harga</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Pakaian Dinas 1 Stel</td><td>Rp 30.000</td></tr>
+          <tr><td>Jas, Almamater, Rompi</td><td>Rp 25.000</td></tr>
+          <tr><td>Selimut</td><td>Rp 10.000 – 30.000</td></tr>
+          <tr><td>Seprei</td><td>Rp 10.000</td></tr>
+          <tr><td>Seprei Set</td><td>Rp 15.000</td></tr>
+          <tr><td>Bedcover</td><td>Rp 20.000 – 35.000</td></tr>
+          <tr><td>Baju Tebal</td><td>Rp 5.000 – 15.000</td></tr>
+          <tr><td>Kemeja</td><td>Rp 10.000 – 20.000</td></tr>
+          <tr><td>Sweater / Hoodie</td><td>Rp 10.000 – 25.000</td></tr>
+          <tr><td>Celana</td><td>Rp 10.000 – 20.000</td></tr>
+          <tr><td>Sajadah</td><td>Rp 10.000 – 40.000</td></tr>
+          <tr><td>Mukena</td><td>Rp 10.000 – 25.000</td></tr>
+          <tr><td>Sarung</td><td>Rp 5.000 – 15.000</td></tr>
+          <tr><td>Bantal</td><td>Rp 5.000 – 30.000</td></tr>
+          <tr><td>Topi</td><td>Rp 10.000 – 15.000</td></tr>
+          <tr><td>Handuk</td><td>Rp 5.000 – 20.000</td></tr>
+          <tr><td>Boneka</td><td>Rp 5.000 – 60.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="express-note reveal">
+      <strong>⚡ Layanan Express +Rp 10.000</strong><br/>
+      Harga menyesuaikan ukuran, ketebalan, dan jenis noda. Harga bisa bertambah jika memakai treatment tambahan seperti: menghilangkan noda, menghilangkan bulu, dll.
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section id="keunggulan">
+  <div class="section-title reveal">
+    <h2>Kenapa <em>Pilih Kami?</em></h2>
+    <div class="divider"></div>
+  </div>
+  <div class="why-grid">
+    <div class="why-item reveal">
+      <div class="why-num">100%</div>
+      <h4>Bersih & Wangi</h4>
+      <p>Menggunakan deterjen premium dan parfum berkualitas</p>
+    </div>
+    <div class="why-item reveal">
+      <div class="why-num">4–6</div>
+      <h4>Jam Express</h4>
+      <p>Layanan kilat untuk kebutuhan mendadak Anda</p>
+    </div>
+    <div class="why-item reveal">
+      <div class="why-num">⭐</div>
+      <h4>Premium Quality</h4>
+      <p>Penanganan pakaian dengan standar kualitas tinggi</p>
+    </div>
+    <div class="why-item reveal">
+      <div class="why-num">📦</div>
+      <h4>Aman & Terpercaya</h4>
+      <p>Setiap pakaian ditangani dengan hati-hati dan penuh tanggung jawab</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / KONTAK -->
+<section id="kontak">
+  <h2>Siap Antar Cucian Anda?</h2>
+  <p>Hubungi kami sekarang via WhatsApp untuk info lebih lanjut atau pemesanan</p>
+  <a class="wa-btn" href="https://wa.me/6281943445436" target="_blank" rel="noopener">
+    <span class="wa-icon">💬</span> Chat WhatsApp – 0819 4344 5436
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 <span>Nabila Laundry</span>. Cuci & Setrika Premium Quality.
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
